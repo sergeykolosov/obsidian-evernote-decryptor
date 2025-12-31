@@ -11,7 +11,7 @@ which can be decrypted by clicking the button.
 It also provides a command to encrypt the selected text as the Evernote secret format.
 
 If you plan to import notes from Evernote, try
-[obsidian-importer-for-evernote-decryptor](https://github.com/rcmdnk/obsidian-importer-for-evernote-decryptor),
+[obsidian-importer-for-evernote-decryptor](https://github.com/sergeykolosov/obsidian-importer-for-evernote-decryptor),
 which is forked version of importer plugin and formats the encrypted data as the Evernote secret format directly.
 About obsidian-importer-for-evernote-decryptor, see below.
 
@@ -29,19 +29,19 @@ Following commands will be added:
 
 - **Decrypt Evernote encrypted data**: Decrypt the selected encrypted text by entering the password and show the decrypted text.
 
-![decrypt](https://github.com/rcmdnk/obsidian-evernote-decryptor/blob/master/images/decrypt.gif?raw=true)
+![decrypt](https://github.com/sergeykolosov/obsidian-evernote-decryptor/blob/master/images/decrypt.gif?raw=true)
 
 - **Decrypt Evernote encrypted data and replace**: Decrypt the selected encrypted text and replace the text with the decrypted text.
 
-![replace](https://github.com/rcmdnk/obsidian-evernote-decryptor/blob/master/images/replace.gif?raw=true)
+![replace](https://github.com/sergeykolosov/obsidian-evernote-decryptor/blob/master/images/replace.gif?raw=true)
 
 - **Encrypt data as Evernote secret**: Encrypt the selected text using a password and replace the text with the encrypted data.
 
-![encrypt](https://github.com/rcmdnk/obsidian-evernote-decryptor/blob/master/images/encrypt.gif?raw=true)
+![encrypt](https://github.com/sergeykolosov/obsidian-evernote-decryptor/blob/master/images/encrypt.gif?raw=true)
 
 - **Format Evernote secret**: Format the selected encrypted text as the Evernote secret format.
 
-![format](https://github.com/rcmdnk/obsidian-evernote-decryptor/blob/master/images/format.gif?raw=true)
+![format](https://github.com/sergeykolosov/obsidian-evernote-decryptor/blob/master/images/format.gif?raw=true)
 
 - **Format all Evernote secrets in the note**: Format the all encrypted text in the note as the Evernote secret format.
 
@@ -57,11 +57,11 @@ This formatted text is viewed as a button of `Evernote Secret` in both reading a
 
 By clicking the button, the password input dialog will be shown and the decrypted text will be displayed in a modal.
 
-![button](https://github.com/rcmdnk/obsidian-evernote-decryptor/blob/master/images/button.gif?raw=true)
+![button](https://github.com/sergeykolosov/obsidian-evernote-decryptor/blob/master/images/button.gif?raw=true)
 
 You can directly edit the encrypted text as a inline-code block, too.
 
-![edit](https://github.com/rcmdnk/obsidian-evernote-decryptor/blob/master/images/edit.gif?raw=true)
+![edit](https://github.com/sergeykolosov/obsidian-evernote-decryptor/blob/master/images/edit.gif?raw=true)
 
 ## Settings
 
@@ -88,7 +88,7 @@ bold, italic, or strikethrough, it will not be formatted.
 
 ## obsidian-importer-for-evernote-decryptor
 
-[obsidian-importer-for-evernote-decryptor](https://github.com/rcmdnk/obsidian-importer-for-evernote-decryptor) is a forked version of importer plugin, which formats the encrypted data as Evernote secret format directly.
+[obsidian-importer-for-evernote-decryptor](https://github.com/sergeykolosov/obsidian-importer-for-evernote-decryptor) is a forked version of importer plugin, which formats the encrypted data as Evernote secret format directly.
 
 It is not integrated as a community plugin yet, so you need to install it with
 [BRAT](https://github.com/TfTHacker/obsidian42-brat).
@@ -101,7 +101,7 @@ from `Add Beta plugin with frozen version` button in the BRAT settings.
 
 Use following repository information:
 
-* Repository: https://github.com/rcmdnk/obsidian-importer-for-evernote-decryptor
+* Repository: https://github.com/sergeykolosov/obsidian-importer-for-evernote-decryptor
 * The release version tag: 1.6.999
 
 Then you can import notes from Evernote with encrypted data formatted as Evernote secret format.

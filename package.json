@@ -16,7 +16,7 @@
 		"evernote",
 		"encryption"
 	],
-	"author": "rcmdnk",
+	"author": "sergeykolosov",
 	"license": "APACHE-2.0",
 	"devDependencies": {
 		"@types/node": "^16.11.6",

@@ -4,8 +4,8 @@
 	"version": "2.2.0",
 	"minAppVersion": "1.0.0",
 	"description": "Obsidian Plugin for encrypted data imported from Evernote.",
-	"author": "rcmdnk",
-	"authorUrl": "https://github.com/rcmdnk",
-	"fundingUrl": "https://github.com/sponsors/rcmdnk",
+	"author": "sergeykolosov",
+	"authorUrl": "https://github.com/sergeykolosov",
+	"fundingUrl": "https://github.com/sponsors/sergeykolosov",
 	"isDesktopOnly": false
 }
