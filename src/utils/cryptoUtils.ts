@@ -1,6 +1,7 @@
 import { App, Notice } from 'obsidian';
 import { RESERVED_VALUE, SALT_LENGTH, SALT_HMAC_LENGTH, IV_LENGTH, BODY_HMAC_LENGTH, PBKDF2_ITERATIONS, KEY_LENGTH, HASH } from '../constants/crypto';
 import { openPasswordModal } from '../modals/PasswordModal';
+import { decryptRC2 } from './cryptoRC2Utils';
 
 export function reservedPart(reserved: string, encoded: string): string {
 	const n_bits = reserved.length * 8;
@@ -187,9 +188,19 @@ export async function decryptWrapper(app: App, encryptedText: string): Promise<s
 
 	try {
 		return await decrypt(encryptedText, password);
-	} catch (error) {
-		new Notice('❌ Failed to decrypt.', 10000);
-		new Notice(error.message, 10000);
-		return null;
+	} catch (aesError) {
+		// Try RC2 decryption (Evernote legacy format)
+		try {
+			const result = decryptRC2(encryptedText, password);
+			if (!result.crcOk) {
+				new Notice('⚠️ RC2 decryption succeeded but CRC validation failed', 10000);
+			}
+			return result.text;
+		} catch (rc2Error) {
+			// Both methods failed
+			new Notice('❌ Failed to decrypt.', 10000);
+			new Notice(aesError.message, 10000);
+			return null;
+		}
 	}
 }
