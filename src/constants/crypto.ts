@@ -6,3 +6,4 @@ export const BODY_HMAC_LENGTH = 32;
 export const PBKDF2_ITERATIONS = 50000;
 export const KEY_LENGTH = 16;
 export const HASH = 'SHA-256';
+export const RC2_EFFECTIVE_KEY_BITS = 64;
